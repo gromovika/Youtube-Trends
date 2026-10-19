@@ -1,0 +1,65 @@
+# ===== Секреты и локальная конфигурация =====
+.env
+.env.*
+!.env.example
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ===== Виртуальные окружения =====
+.venv/
+venv/
+env/
+ENV/
+
+# ===== Poetry =====
+# (poetry.lock обычно коммитят — не игнорируем его!)
+# Если решите не коммитить lock-файл, раскомментируйте строку ниже:
+# poetry.lock
+
+# ===== Тестирование и кэш =====
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.mypy_cache/
+.ruff_cache/
+
+# ===== ML-артефакты =====
+models/
+*.joblib
+*.pkl
+*.pickle
+
+# ===== Streamlit =====
+.streamlit/secrets.toml
+
+# ===== Jupyter (если будете экспериментировать) =====
+.ipynb_checkpoints/
+
+# ===== IDE и редакторы =====
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ===== ОС =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== Логи и временные файлы =====
+*.log
+logs/
+tmp/
+temp/
